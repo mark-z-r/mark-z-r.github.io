@@ -1,0 +1,4 @@
+baseURL = 'https://mark-z-r.github.io/'
+languageCode = 'en-us'
+title = "Mark's Website"
+theme = 'smol'
