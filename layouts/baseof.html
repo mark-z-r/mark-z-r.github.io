@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="{{ .Params.author.name }}">
+    <base href="https://mark-z-r.github.io/">
+    <link href="./main.css" rel="stylesheet">
+    <title>{{ .Page.title}} - {{.Site.Title}}</title>
+  </head>
+  <body>
+    <noscript>
+      <a href="{{ .Page.Permalink }}#main">Skip to content</a>
+    </noscript>
+    <main>
+      {{ block "main" . }}
+      {{ end }}
+    </main>
+    <nav>{{ partial "navbar.html" . }}</nav>
+    <footer>{{ partial "footer.html" . }}</footer>
+  </body> 
+</html>
