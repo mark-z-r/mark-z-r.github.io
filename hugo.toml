@@ -3,5 +3,5 @@ languageCode = 'en-us'
 title = "Mark's Website"
 disableKinds = ['rss','sitemap']
 [minify]
- minifyOutput = true
+ minifyOutput = false
 

@@ -5,7 +5,7 @@
     <meta name="author" content="{{ .Params.author.name }}">
     <base href="https://mark-z-r.github.io/">
     <link href="./main.css" rel="stylesheet">
-    <title>{{ .Page.Title }} - {{ .Site.Title }}</title>
+    <title>{{ if ne .Page.Title .Site.Title }}{{ .Page.Title }} - {{ end }}{{ .Site.Title }}</title>
   </head>
   <body>
     <noscript>
