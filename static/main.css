@@ -10,6 +10,7 @@ code {
   border: .1em solid;
   border-color: lightslategrey;
   border-radius: .5em;
-  padding: .5em;
+  padding: .3em .2em .0em .2em;
+  font-family: monospace;
 }
 

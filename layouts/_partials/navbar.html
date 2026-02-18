@@ -1,4 +1,7 @@
 <ul>
   <li><a href="{{ .Site.Home.Permalink }}">Home</a></li>
   <li><a href="{{ with .Site.GetPage `/dev.html` }}{{.Permalink}}{{end}}">Dev Page</a></li>
+  {{ range .Site.Sections }}
+  <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+  {{ end }}
 </ul>
