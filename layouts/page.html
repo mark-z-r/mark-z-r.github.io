@@ -1,3 +1,12 @@
 {{ define "main" }}
+<h1>{{ .Title }}</h1>
+<div class="readtime">est. reading time: <time datetime="{{.Page.ReadingTime}}m">{{.Page.ReadingTime}} minute{{ if ne .Page.ReadingTime 1 }}s{{end}}</time></div>
+  <br>
+<details>
+  <summary>
+    Table of Contents
+  </summary>
+  {{ .TableOfContents }}
+</details>
 {{ .Content }}	
 {{ end }}

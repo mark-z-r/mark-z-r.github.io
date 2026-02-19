@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="author" content="{{ .Params.author.name }}">
-    <base href="{{ .Site.BaseURL }}">
-    <link href="./main.css" rel="stylesheet">
+    <base href="{{ .Page.Permalink }}">
+    <link href="{{ with resources.Get `css/main.css`  }}{{.Permalink}}{{end}}" rel="stylesheet">
     <title>{{ if ne .Page.Title .Site.Title }}{{ .Page.Title }} - {{ end }}{{ .Site.Title }}</title>
   </head>
   <body>
